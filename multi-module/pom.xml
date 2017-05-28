@@ -207,10 +207,10 @@
   </dependencyManagement>
 
   <scm>
-    <connection>scm:git:git@github.com:gabrielf/maven-samples.git</connection>
-    <developerConnection>scm:git:git@github.com:gabrielf/maven-samples.git</developerConnection>
+    <connection>scm:git@github.com:chanduprasadk/work-development.git</connection>
+    <developerConnection>scm:git@github.com:chanduprasadk/work-development.git</developerConnection>
     <tag>HEAD</tag>
-    <url>http://github.com/gabrielf/maven-samples</url>
+    <url>https://github.com/chanduprasadk/work-development</url>
   </scm>
 
   <prerequisites>
