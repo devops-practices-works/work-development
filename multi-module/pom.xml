@@ -20,16 +20,7 @@
     <module>server</module>
     <module>webapp</module>
   </modules>
-<repository>
-  <id>simple-demo-feed</id>
-  <url>https://pkgs.dev.azure.com/M1048374/practice/_packaging/simple-demo-feed/maven/v1</url>
-  <releases>
-    <enabled>true</enabled>
-  </releases>
-  <snapshots>
-    <enabled>true</enabled>
-  </snapshots>
-</repository>
+
   <distributionManagement>
     <site>
       <id>site-server</id>
