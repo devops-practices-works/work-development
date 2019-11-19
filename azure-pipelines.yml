@@ -21,11 +21,17 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
-    jdkArchitectureOption: 'x64'
-    mavenAuthenticateFeed: true
-    publishJUnitResults: false
+    goals: 'clean test package'
+    publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    testRunTitle: 'unit testcases'
+    codeCoverageToolOption: 'JaCoCo'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: true
+    sqMavenPluginVersionChoice: 'latest'
+    checkStyleRunAnalysis: true
+    pmdRunAnalysis: true
+    findBugsRunAnalysis: true
